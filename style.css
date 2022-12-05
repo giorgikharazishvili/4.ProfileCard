@@ -1,0 +1,81 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #19A1AE;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#background-image-top {
+    position: fixed;
+    height: 39rem;
+    width: 39rem;
+    background: url(./images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 10rem;
+    bottom: 22rem;
+    overflow: hidden;
+}
+
+#background-image-bottom {
+    position: fixed;
+    height: 39rem;
+    width: 39rem;
+    background: url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 10rem;
+    top: 20rem;
+    overflow: hidden;
+}
+
+.div-profile-card {
+    position: absolute;
+    width: 20.4rem;
+    height: 23.4rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.div-profile-card>img {
+    top: 0px;
+    width: 100%;
+    height: 8.8rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+@media screen and (min-width:1440px) and (min-height:720px) {
+
+    #background-image-top {
+        position: fixed;
+        width: 61rem;
+        height: 61rem;
+        bottom: 40%;
+        right: 50%;
+    }
+
+    #background-image-bottom {
+        position: fixed;
+        width: 61rem;
+        height: 61rem;
+        top: 55%;
+        left: 47%;
+    }
+
+    .div-profile-card {
+        position: absolute;
+        width: 22rem;
+        height: 24rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+    }
+}
