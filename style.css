@@ -7,7 +7,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
     background-color: #19A1AE;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -33,25 +32,136 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     left: 10rem;
-    top: 20rem;
+    top: 23rem;
     overflow: hidden;
 }
 
 .div-profile-card {
+    display: flex;
+    justify-content: center;
     position: absolute;
     width: 20.4rem;
     height: 23.4rem;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
+    box-shadow:  0px 0px 15px rgb(255, 255, 255);
 }
 
-.div-profile-card>img {
+#div-profile-picture {
+    position: absolute;
+    border-radius: 10px;
+    width: 6rem;
+    height: 6rem;
+    top: 5.4rem;
+}
+
+#div-profile-picture>img {
+    border-radius: 3rem;
+    border: solid white 4px;
+}
+
+#div-profile-picture>img:hover {
+    border: solid rgb(0, 234, 255) 5px;
+    cursor: pointer;
+}
+
+.div-profile-card:hover {
+    cursor: crosshair;
+}
+
+#div-profile-card-top {
     top: 0px;
     width: 100%;
     height: 8.8rem;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
+#div-person-detais {
+    position: absolute;
+    text-align: center;
+    top: 13rem;
+}
+
+#name {
+    font-family: Kumbh Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #2E3349;
+}
+
+#age {
+    font-family: Kumbh Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #6B7082;
+}
+
+#city {
+    font-family: Kumbh Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #6B7082;
+}
+
+
+#div-line {
+    position: absolute;
+    height: 2px;
+    background-color: #E8E9EC;
+    width: 100%;
+    bottom: 5.5rem;
+}
+
+
+#likes-shares-comments {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+
+    width: 75%;
+    bottom: 1.3rem;
+}
+
+#div-likes-shares-comments {
+    text-align: center;
+    height: 2.5rem;
+    width: 3.7rem;
+}
+
+#number {
+    text-align: center;
+    color: #2E3349;
+    font-family: Kumbh Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+#word {
+    text-align: center;
+    color: #6B7082;
+    font-family: Kumbh Sans;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1.5px;
+
+
+}
+
 
 @media screen and (min-width:1440px) and (min-height:720px) {
 
